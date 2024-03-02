@@ -1,21 +1,19 @@
-
-.home{
-    text-align: center;
-    margin-top: 300px;
-  }
-  
-  .home-heading{
-    color: white;
-    font-weight: lighter;
-  }
-  
-  .home-bt{
-    color: white;
-    font-weight: lighter;
-    background-color: rgb(7, 179, 7);
-    width: 200px;
-    height: 40px;
-    border-radius: 100px;
-    outline: none;
-    cursor: pointer;
-  }
+body{
+  background-color: #47398d;
+}
+#homeComponent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#QuizAPPheading{
+  color:white;
+}
+#playbutton{
+  color: white;
+  background-color: #0ab306;
+  padding: 10px 80px;
+  border-radius: 60px;
+  border-color: grey black black grey;
+}

@@ -1,11 +1,12 @@
-import React from "react";
+import React,{Component} from "react";
 import "../css/HomeComponent.css"
-
-export default function HomeComponent(){
-  return(
-    <div className="home">
-      <h2 className="home-heading">Quiz App</h2>
-      <button className="home-bt">Play</button>
-    </div>
-  )
-}
+export default class HomeComponent extends Component {
+    render() {
+      return (
+        <div id="homeComponent">
+          <h1 id="QuizAPPheading">Quiz App</h1>
+          <button id="playbutton">Play</button>
+        </div>
+      )
+    }
+  }

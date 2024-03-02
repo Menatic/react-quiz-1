@@ -1,33 +1,25 @@
-import React from "react";
+import React, { Component } from 'react'
 import "../css/ResultComponent.css"
-
-export default function ResultComponent(){
-  return(
-    <div className="result">
-      <h1>Result</h1>
-      <div className="score-section">
-        <h3>You need more practice!</h3>
-        <h1 className="score">Your score is 20%</h1>
-        <div className="flex">
-          <div className="details">
-            <h5>Totol number of quesions</h5>
-            <h5>Number of attempted questions</h5>
-            <h5>Number of correct answers</h5>
-            <h5>Number of wrong answers</h5>
+export default class ResultComponent extends Component {
+    render() {
+      return (
+        <div id="resultComponent">
+          <h1 id="ResultComponentHeading">Result</h1>
+          <div id="result-container">
+              <h3>You need more Practice ! </h3>
+              <h1 id="scorestatement">Your Score is 20%</h1>
+              <div id="results">
+                  <div className="resultStatements"> <p>Total number of question</p> <p>15</p> </div>
+                  <div className="resultStatements"> <p>Number of attempted questions</p> <p>9</p> </div>
+                  <div className="resultStatements"> <p>Number of correct answers</p> <p>3</p> </div>
+                  <div className="resultStatements"> <p>Number of wrong answers</p> <p>6</p> </div>
+              </div>
           </div>
-          <div className="number">
-            <h5>15</h5>
-            <h5>9</h5>
-            <h5>3</h5>
-            <h5>6</h5>
+          <div id="RC-actionsContainer">
+              <button className="RC-actions" id="playagain">Play Again</button>
+              <button className="RC-actions" id="backtohome">Back to Home</button>
           </div>
         </div>
-      </div>
-
-      <div className="buttons">
-        <button className="play">Play Again</button>
-        <button className="home">Back to home</button>
-      </div>
-    </div>
-  )
+      )
+    }
 }
